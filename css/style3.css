@@ -1,0 +1,148 @@
+body {
+    height: 100vh;
+}
+
+#container {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#container .general {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#container .main-menu {
+    margin-bottom: 30px;
+    flex: 0 0 100%;
+    height: 100px;
+}
+
+#container .main-menu #logo {
+    background: #4aaaa5;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 40px;
+    font-size: 30px;
+    float: left;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    height: 60px;
+    line-height: 60px;
+    margin: -10px -10px;
+}
+
+#container .main-menu ul {
+    display: inline-block;
+    padding: 30px;
+    margin-left: 38%;
+}
+
+#container .main-menu li {
+    display: inline-block;
+}
+
+#container .main-menu li a {
+
+    text-decoration: none;
+    color: #999;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-left: 14px;
+
+}
+
+#container .main-menu li+li::before {
+    content: "|";
+    color: gray;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#container .main-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#container .main-box .left-side {
+
+    flex: 5;
+    height: 600px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+    padding: 20px;
+}
+
+#container .main-box .left-side h1 {
+    color: #4aaaa5;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: 20px;
+    line-height: 60px;
+    padding: 20px 0px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+#container .main-box .left-side label {
+    font-size: 20px;
+    color: #777;
+    width: 100%;
+    display: block;
+    padding: 15px 0px;
+}
+
+#container .main-box .left-side input,
+#container .main-box .left-side textarea {
+    width: 98%;
+    color: #777;
+    display: block;
+    padding: 6px;
+    border: 1px solid #ddd;
+}
+
+#container .main-box .left-side button {
+    background: #4aaaa5;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 1px solid;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+#container .main-box .right-side {
+    flex: 2;
+    height: 180px;
+}
+
+#container .main-box .right-side h2 {
+    width: 70%;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+    color: #4aaaa5;
+    font-size: 20px;
+    border-bottom: 2px solid #eee;
+    padding: 10px 40px;
+}
+
+#container .main-box .right-side img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin-top: 12px
+}
+
+#container footer {
+    color: #ccc;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid #4aaaa5;
+    padding: 40px 0px;
+    box-sizing: border-box;
+}

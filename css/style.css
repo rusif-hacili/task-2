@@ -1,0 +1,137 @@
+body {
+    height: 100vh;
+}
+
+#container {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+   
+}
+
+#container .general {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#container .main-menu {
+    margin-bottom: 30px;
+    flex: 0 0 100%;
+    height: 100px;
+}
+
+#container .main-menu #logo {
+    background: #4aaaa5;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 40px;
+    font-size: 30px;
+    float: left;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    height: 60px;
+    line-height: 60px;
+    margin: -10px -10px;
+}
+
+#container .main-menu ul {
+    display: inline-block;
+    padding: 30px;
+    margin-left: 38%;
+}
+
+#container .main-menu li {
+    display: inline-block;
+}
+
+#container .main-menu li a {
+
+    text-decoration: none;
+    color: #999;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-left: 14px;
+
+}
+
+#container .main-menu li+li::before {
+    content: "|";
+    color: gray;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#container .main-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#container .left-side {
+    flex: 5;
+    height: 480px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+
+}
+
+#container .left-side .box-left {
+    padding: 20px;
+}
+
+#container .left-side .box-left h1 {
+    color: #4aaaa5;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: 30px;
+    padding: 25px 0px;
+}
+
+#container .left-side .box-left img {
+    float: left;
+    padding-right: 20px;
+}
+
+#container .left-side .box-left p {
+    color: #777;
+    font-size: 18px;
+    text-indent: 50px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+
+#container .right-side {
+    flex: 2;
+    height: 180px;
+
+}
+
+#container .right-side h2 {
+    width: 65%;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+    color: #4aaaa5;
+    font-size: 20px;
+    border-bottom: 2px solid #eee;
+    padding: 10px 40px;
+}
+
+#container .right-side img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin-top: 12px
+}
+
+footer {
+    color: #ccc;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid #4aaaa5;
+    padding: 40px 0px;
+    box-sizing: border-box;
+}
